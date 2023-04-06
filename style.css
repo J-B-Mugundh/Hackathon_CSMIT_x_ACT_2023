@@ -1,42 +1,197 @@
-body {
-    font-family: "Open Sans", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
-  .heading {
-    background-color: #3c3c3c;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px;
+  .label-main{
+    font-size:40px;
   }
-  .col-md-3{
-    background: url(pic.png);
-    background-size: cover;
+  body {
+    
+    font-family: 'Inter', sans-serif;
   }
-  input {
-    width: 75%;
+  .forms-form-label {
+    padding: 10rem;
+    margin: 10rem;
   }
-  #city-list {
-    width: 22rem;
+  .forms-mb-3 {
+    margin-bottom: 15px;
   }
-  #city-date-icon,
-  #city-name,
-  #current-icon {
-      display: flex;
-      flex-direction: row;
-      justify-content: center/space-around/space-between;
+  .forms-relative {
+    position: relative;
   }
-  
-  h6 {
-    font-weight: bold;
+  .forms-opacity-0 {
+    opacity: 0;
   }
-  
-  h4 {
-      margin: 5px;
+  .forms-stroke-current {
+    stroke: #ffffff;
+    z-index: 999;
   }
-  #forecast-cards {
-      display: flex;
-      flex-direction: row;
-      justify-content: center/space-between;
+  #supportCheckbox:checked ~ div span {
+    opacity: 1;
   }
-  .forecast {
-      margin: 10px;
+  #supportCheckbox:checked ~ div {
+    background: #00ff80;
+    border-color: #00ff80;
   }
+
+  .forms-main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+    border-radius: 5px;
+    background-color:#00ff80;
+    padding: 20px;
+  }
+
+  .forms-form-wrapper {
+    margin: 0 auto;
+    max-width: 570px;
+    width: 100%;
+    background: white;
+    padding: 40px;
+  }
+
+  .forms-img {
+    display: block;
+    margin: 0 auto 45px;
+  }
+
+  .forms-input-wrapp > div {
+    display: flex;
+    gap: 20px;
+  }
+
+  .forms-input-flex {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+  }
+  .forms-input-flex > div {
+    width: 50%;
+  }
+  .forms-form-input {
+    width: 100%;
+    padding: 13px 22px;
+    border-radius: 5px;
+    border: 1px solid #dde3ec;
+    background: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    color: #00ff80;
+    outline: none;
+    resize: none;
+  }
+  .forms-form-input::placeholder,
+  select.forms-form-input,
+  .forms-form-input[type='date']::-webkit-datetime-edit-text,
+  .forms-form-input[type='date']::-webkit-datetime-edit-month-field,
+  .forms-form-input[type='date']::-webkit-datetime-edit-day-field,
+  .forms-form-input[type='date']::-webkit-datetime-edit-year-field {
+    color: #00ff80;
+  }
+
+  .forms-form-input:focus {
+    border-color: #6a64f1;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+  .forms-form-label {
+    color: #536387;
+    font-size: 14px;
+    line-height: 24px;
+    display: block;
+    margin: 10px;
+    padding: 4rem;
+    tab-size:4
+  }
+
+  .forms-checkbox-label {
+    display: flex;
+    cursor: pointer;
+    user-select: none;
+    font-size: 16px;
+    line-height: 24px;
+    color: #536387;
+  }
+  .forms-checkbox-label a {
+    margin-left: 5px;
+    color: #6a64f1;
+  }
+  .forms-input-checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  .forms-checkbox-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+    margin-top: 2px;
+    border: 0.7px solid #dde3ec;
+    border-radius: 3px;
+  }
+
+  .forms-form-file {
+    padding: 12px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #00ff80;
+  }
+  .forms-form-file::-webkit-file-upload-button {
+    display: none;
+  }
+  .forms-form-file:before {
+    content: 'Upload';
+    display: inline-block;
+    background: #EEEEEE;
+    border: 0.5px solid #E7E7E7;
+    border-radius: 3px;
+    padding: 3px 12px;
+    outline: none;
+    white-space: nowrap;
+    cursor: pointer;
+    color: #637381;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    margin-right: 10px;
+  }
+
+  .forms-btn {
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 14px 25px;
+    border: none;
+    font-weight: 500;
+    background-color: #6a64f1;
+    color: white;
+    cursor: pointer;
+    margin-top: 25px;
+  }
+  .forms-btn:hover {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .forms-w-45 {
+    width: 45%;
+  }
+  .error
+{
+  color: red;
+  size: 80%
+}
+.hidden
+{
+  display:none
+}
